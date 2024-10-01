@@ -1,0 +1,21 @@
+{
+  "id": "char_003",
+  "name": "Thorne Ironheart",
+  "class": "warrior",
+  "stats": {
+    "strength": 14,
+    "intelligence": 8,
+    "dexterity": 10
+  },
+  "inventory": [
+    "Sturdy Longsword",
+    "Shield of the Valiant",
+    "Health Potion",
+    "Chainmail Armor"
+  ],
+  "health": 25,
+  "maxHealth": 25,
+  "backstory": "Thorne Ironheart, a decorated veteran of the Royal Guard, has entered the Spooky Story Maze seeking to prove their worth and honor their fallen comrades. With unwavering courage and a steadfast determination, Thorne faces each challenge head-on, their battle-worn armor a testament to countless victories and near-defeats.",
+  "experience": 0,
+  "level": 1
+}

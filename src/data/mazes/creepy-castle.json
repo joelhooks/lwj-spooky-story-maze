@@ -1,0 +1,85 @@
+{
+  "id": "f8b520d1-6792-403d-b71e-3c918ba4ae45",
+  "name": "Creeping Shadows Asylum",
+  "seed": "a mysterious and unsettling beginning",
+  "overallDifficulty": 7,
+  "theme": "abandoned asylum",
+  "nodes": [
+    {
+      "id": "342801ef-da24-414e-9014-c80f7bf43774",
+      "name": "Entrance Hall",
+      "type": "start",
+      "theme": "abandoned asylum",
+      "initialVisitPrompt": "Imagine entering an asylum long abandoned, with cracked tiles underfoot and flaking paint on the walls. There's a cold, unnatural draft that seems to carry faint whispers. Generate the sense of dread and anticipation felt by Zephyr Shadowstep as they step into the dimly lit entrance hall, their keen eyes scanning for danger or clues.",
+      "initialVisitImagePrompt": "Scene of an old abandoned asylum entrance hall, dim lighting, cracked tiles, peeling paint, shadows hinting at movement.",
+      "returnVisitPrompt": "Recall the initial feeling of unease that Zephyr felt upon first entering the entrance hall, now mix in a sense of cautious familiarity as they navigate this area once more, alert for any changes or hidden threats they might have previously overlooked."
+    },
+    {
+      "id": "1999d6f0-9279-4faf-b8ef-d5268586e053",
+      "name": "Echoing Corridor",
+      "type": "standard",
+      "theme": "abandoned asylum",
+      "initialVisitPrompt": "Zephyr cautiously traverses a long corridor lined with decrepit doors, each seeming to hide its own dark story. The corridor echoes with every step, amplifying the sense of loneliness. Create an atmosphere of tension, focusing on Zephyr's acute awareness of their surroundings and their rogue instincts kicking in.",
+      "initialVisitImagePrompt": "Image of a long, gloomy corridor in an abandoned asylum, doors ajar, shadows cast eerily, empty wheelchair in view.",
+      "returnVisitPrompt": "On their return through the corridor, emphasize Zephyr's heightened senses, noting any subtle shifts in the shadows or distant echoes that weren’t there before, as if the asylum itself is a living entity observing them."
+    },
+    {
+      "id": "3c61d92a-893a-482e-bfd1-61ca06230b20",
+      "name": "Disused Therapy Room",
+      "type": "standard",
+      "theme": "abandoned asylum",
+      "initialVisitPrompt": "Write about Zephyr entering a small, cluttered room that was once used for therapy. In the low light, dusty furniture and forgotten tools of the trade can be seen. The air is thick with neglect and forgotten hopes. Highlight Zephyr's mixed feelings of curiosity and sadness as they investigate potential clues or resources.",
+      "initialVisitImagePrompt": "Simple depiction of a therapy room with overturned chairs, dusty shelves, scattered papers, and dim light filtering through barred windows.",
+      "returnVisitPrompt": "Upon returning, instruct to emphasize how Zephyr recalls the eerie serenity of the therapy room, pondering the lost stories it holds, while scanning for any items missed during the initial visit."
+    },
+    {
+      "id": "be8c8f85-342f-41b3-b116-8ea2f7b815a2",
+      "name": "Tranquil Garden",
+      "type": "checkpoint",
+      "theme": "abandoned asylum",
+      "initialVisitPrompt": "Zephyr discovers an overgrown garden courtyard that contrasts starkly with the interior asylum gloom. Here, nature has reclaimed its domain, with creeping vines and wildflowers. The air is strangely calming yet unsettling, as if holding its breath. Describe the temporary peace Zephyr finds here and any hidden dangers under the foliage.",
+      "initialVisitImagePrompt": "Overgrown garden in a courtyard, with vines, stone benches, shattered statues, and dappled sunlight filtering through.",
+      "returnVisitPrompt": "Instruct to evoke a sense of reprieve and caution as Zephyr revisits the garden, wary of surprise encounters, but also taking note of the odd, melancholic beauty as time continues to possess this secretive place."
+    },
+    {
+      "id": "c364d06f-4aec-4242-853a-2a680bd4cb88",
+      "name": "The Warden's Office",
+      "type": "boss",
+      "theme": "abandoned asylum",
+      "initialVisitPrompt": "Detail the atmosphere as Zephyr enters the Warden’s office, a place of authority now fallen into ruin. The remnants of a once orderly room are overshadowed by a sense of malice and foreboding. Guide the expectation of an encounter with a powerful, possibly supernatural entity guarding secrets of the asylum, testing Zephyr to the limits.",
+      "initialVisitImagePrompt": "Dark, cluttered office with dilapidated furniture, papers strewn about, a large ominous desk, shadows looming large.",
+      "returnVisitPrompt": "Invoke a heightened tension as Zephyr revisits the Warden's office, haunted by the memory of previous confrontations, but with renewed determination and tad more courage provided by experience."
+    }
+  ],
+  "edges": [
+    {
+      "id": "7a94a06c-9dbf-4378-8dcd-e02cf5f6e78b",
+      "sourceId": "342801ef-da24-414e-9014-c80f7bf43774",
+      "targetId": "1999d6f0-9279-4faf-b8ef-d5268586e053",
+      "transitionPrompt": "Describe the cautious progression of Zephyr from the entrance hall into the ominous echoing corridor, where each step seems to amplify in the silence. Focus on the uncertainty accompanying them as they delve deeper into the asylum's depths."
+    },
+    {
+      "id": "e5225676-8b82-4ff7-8014-1757b69d4be3",
+      "sourceId": "1999d6f0-9279-4faf-b8ef-d5268586e053",
+      "targetId": "3c61d92a-893a-482e-bfd1-61ca06230b20",
+      "transitionPrompt": "Illustrate the subtle shift in Zephyr's demeanor as they move from the echoing corridor into the intimate confines of the disused therapy room, where a sense of closeness contrasts with the previous emptiness."
+    },
+    {
+      "id": "403c4fb4-98cf-4976-9ff1-df2208801f87",
+      "sourceId": "1999d6f0-9279-4faf-b8ef-d5268586e053",
+      "targetId": "be8c8f85-342f-41b3-b116-8ea2f7b815a2",
+      "transitionPrompt": "Guide Zephyr's careful exit from the eerie corridor to the unexpectedly open and verdant garden courtyard, noting the stark atmosphere change and how they adjust their stance in this seemingly peaceful area."
+    },
+    {
+      "id": "69285e9d-dcb7-4111-8916-5e9197bed793",
+      "sourceId": "be8c8f85-342f-41b3-b116-8ea2f7b815a2",
+      "targetId": "c364d06f-4aec-4242-853a-2a680bd4cb88",
+      "transitionPrompt": "Convey Zephyr's movement from the tranquil garden into the ominous setting of the Warden’s office, where anticipation and a foreboding presence replace the temporary calm of the greenery."
+    }
+  ],
+  "metadata": {
+    "startNodeId": "342801ef-da24-414e-9014-c80f7bf43774",
+    "bossNodeId": "c364d06f-4aec-4242-853a-2a680bd4cb88",
+    "checkpointNodeIds": ["node_004"]
+  }
+}

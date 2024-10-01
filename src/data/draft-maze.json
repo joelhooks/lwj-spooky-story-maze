@@ -1,0 +1,85 @@
+{
+  "id": "6bbe7e34-3fa2-4271-af03-94f607b34f52",
+  "name": "Neverwinter Woods Werewolf",
+  "seed": "spooky-werewolf-forest",
+  "overallDifficulty": 4,
+  "theme": "neverwinter woods werewolf",
+  "nodes": [
+    {
+      "id": "6d3a415a-0d8f-455e-87a6-d9196b19ff7e",
+      "name": "Forest Entrance",
+      "type": "start",
+      "theme": "neverwinter woods werewolf",
+      "initialVisitPrompt": "Describe the entrance to a dense, fog-laden forest during a chilly autumn night. Mention how the moonlight filters through the twisted branches, casting eerie shadows on the leaf-strewn path. Highlight the sense of trepidation as Lyra Stormweaver stands at the threshold, clutching her spellbook and wand, ready to face whatever lurks within.",
+      "initialVisitImagePrompt": "A foggy forest entrance at night, with moonlight filtering through twisted branches onto a leaf-strewn path.",
+      "returnVisitPrompt": "As Lyra returns to the forest entrance, recall the initial chill and foreboding atmosphere. Mention if anything has changed, such as thickening fog or growing sounds of distant howls."
+    },
+    {
+      "id": "4f5c6ac8-dc42-4be5-a6db-f102c7fbbc44",
+      "name": "Abandoned Cabin",
+      "type": "standard",
+      "theme": "neverwinter woods werewolf",
+      "initialVisitPrompt": "Create a scene at an abandoned cabin shrouded in mystery. Describe its dilapidated state and the faint traces of past inhabitants. Include elements like creaking wooden steps and the scent of old, wet wood. Consider the potential for hidden treasures or dangers within.",
+      "initialVisitImagePrompt": "A dilapidated cabin in the woods, with broken windows and a sagging roof, surrounded by overgrown vegetation.",
+      "returnVisitPrompt": "When Lyra revisits the cabin, reference any items she found or creatures encountered. Reflect on her growing familiarity with the cabin's eerie ambiance."
+    },
+    {
+      "id": "f78c5204-5072-4056-b1f8-6f5aa1d4a949",
+      "name": "Moonlit Clearing",
+      "type": "checkpoint",
+      "theme": "neverwinter woods werewolf",
+      "initialVisitPrompt": "Illustrate a moonlit clearing where the trees form a perfect circle around a stone altar. Highlight the serene yet unnerving beauty of the place, enhanced by the glittering of dew on the grass. Consider mentioning signs of a forgotten ritual that might intrigue Lyra's curiosity.",
+      "initialVisitImagePrompt": "A moonlit clearing with a stone altar in the center, surrounded by evenly spaced trees and grass glistening with dew.",
+      "returnVisitPrompt": "As Lyra returns to the moonlit clearing, remember any rituals or spells she attempted and the clearing's unchanged, solemn beauty that seems to welcome her back."
+    },
+    {
+      "id": "68cd3daf-e745-482a-8aa7-b4aad47ed355",
+      "name": "Silent Brook",
+      "type": "standard",
+      "theme": "neverwinter woods werewolf",
+      "initialVisitPrompt": "Detail a silent brook that quietly meanders through the forest, bordered by moss-covered stones. Describe the tranquillity of the place, perhaps a stark contrast to the rest of the woods, and how the soft bubbling of water can lull Lyra into a false sense of security.",
+      "initialVisitImagePrompt": "A gentle brook flowing through the forest, with moss-covered stones lining its banks under a canopy of trees.",
+      "returnVisitPrompt": "Upon revisiting the silent brook, mention any remnants of the previous visit, such as footprints or changes in Lyra's perception of the brook's peacefulness after recent encounters."
+    },
+    {
+      "id": "d8b46f2e-260a-4d92-8d1b-fb837303561e",
+      "name": "Werewolf's Lair",
+      "type": "boss",
+      "theme": "neverwinter woods werewolf",
+      "initialVisitPrompt": "Set the scene in a dimly lit cave, the lair of the werewolf. Describe the pungent smell of damp fur and iron, the chilling growls echoing within, and signs of a recent struggle. Emphasize the oppressive feeling of danger as Lyra prepares to face her greatest challenge yet.",
+      "initialVisitImagePrompt": "A dim cave interior with claw marks on the rocky walls and a pair of glowing eyes peering from the shadows.",
+      "returnVisitPrompt": "On returning to the werewolf's lair, Lyra recalls the intense encounter. Note if any remains from the battle linger and how the lair feels different now."
+    }
+  ],
+  "edges": [
+    {
+      "id": "e28628fa-1c22-49e9-a282-081c501a4dd2",
+      "sourceId": "6d3a415a-0d8f-455e-87a6-d9196b19ff7e",
+      "targetId": "4f5c6ac8-dc42-4be5-a6db-f102c7fbbc44",
+      "transitionPrompt": "Guide Lyra along a narrow path cloaked in mist, leading from the forest entrance to the shadowy figure of a cabin in the distance. Highlight the crunch of leaves underfoot and the distant rustle of unseen creatures."
+    },
+    {
+      "id": "23b74dd9-55fe-4d30-83e6-d3d1f7fb0906",
+      "sourceId": "4f5c6ac8-dc42-4be5-a6db-f102c7fbbc44",
+      "targetId": "68cd3daf-e745-482a-8aa7-b4aad47ed355",
+      "transitionPrompt": "Describe the path from the abandoned cabin to the silent brook, noting how the forest grows denser, with the sound of running water guiding Lyra through the trees."
+    },
+    {
+      "id": "28f4ce25-c4a8-433a-a003-0d2858d9f9a6",
+      "sourceId": "68cd3daf-e745-482a-8aa7-b4aad47ed355",
+      "targetId": "f78c5204-5072-4056-b1f8-6f5aa1d4a949",
+      "transitionPrompt": "Lead Lyra from the silent brook to the moonlit clearing, mentioning how the trees thin out, revealing a starry sky above and the inviting glow of the clearing ahead."
+    },
+    {
+      "id": "9aeea715-8705-42b7-bee8-0c87289d441f",
+      "sourceId": "f78c5204-5072-4056-b1f8-6f5aa1d4a949",
+      "targetId": "d8b46f2e-260a-4d92-8d1b-fb837303561e",
+      "transitionPrompt": "Illustrate the transition from the calming aura of the clearing to the foreboding path leading to the werewolf's lair, noting the drop in temperature and rise in tension as Lyra approaches her destination."
+    }
+  ],
+  "metadata": {
+    "startNodeId": "6d3a415a-0d8f-455e-87a6-d9196b19ff7e",
+    "bossNodeId": "d8b46f2e-260a-4d92-8d1b-fb837303561e",
+    "checkpointNodeIds": ["c543e52d-7255-49fc-b655-5e7c7f5e36cc"]
+  }
+}

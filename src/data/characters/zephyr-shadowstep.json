@@ -1,0 +1,21 @@
+{
+  "id": "char_002",
+  "name": "Zephyr Shadowstep",
+  "class": "rogue",
+  "stats": {
+    "strength": 8,
+    "intelligence": 10,
+    "dexterity": 14
+  },
+  "inventory": [
+    "Lockpick Set",
+    "Smoke Bomb",
+    "Poisoned Dagger",
+    "Hooded Cloak"
+  ],
+  "health": 18,
+  "maxHealth": 18,
+  "backstory": "Zephyr Shadowstep, once a notorious thief in the sprawling city of Nighthaven, now seeks redemption by exploring the Spooky Story Maze. Armed with unparalleled stealth and a sharp wit, Zephyr hopes to use their skills for good, all while unable to resist the allure of any shiny treasures they might encounter along the way.",
+  "experience": 0,
+  "level": 1
+}

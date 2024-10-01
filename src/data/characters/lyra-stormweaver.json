@@ -1,0 +1,21 @@
+{
+  "id": "char_001",
+  "name": "Lyra Stormweaver",
+  "class": "mage",
+  "stats": {
+    "strength": 6,
+    "intelligence": 14,
+    "dexterity": 10
+  },
+  "inventory": [
+    "Spellbook of Shadows",
+    "Potion of Minor Healing",
+    "Arcane Focus Wand",
+    "Traveler's Cloak"
+  ],
+  "health": 20,
+  "maxHealth": 20,
+  "backstory": "Lyra Stormweaver, a prodigy from the Arcane Academy, ventures into the Spooky Story Maze seeking forbidden knowledge and magical artifacts. Her insatiable curiosity often leads her into perilous situations, but her quick wit and mastery over the arcane arts have always seen her through... so far.",
+  "experience": 0,
+  "level": 1
+}
