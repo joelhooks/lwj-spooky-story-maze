@@ -26,7 +26,7 @@
     "convex": "^1.16.3",
     "lucide-react": "^0.445.0",
     "mustache": "^4.2.0",
-    "next": "15.0.0-canary.165",
+    "next": "15.5.18",
     "react": "19.0.0-rc-e740d4b1-20240919",
     "react-dom": "19.0.0-rc-e740d4b1-20240919",
     "react-hook-form": "^7.53.0",
